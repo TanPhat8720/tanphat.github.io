@@ -3,88 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới Thiệu Nghề Nghiệp</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Giới thiệu bản thân</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            text-align: center;
+            margin: 40px;
             background-color: #f4f4f4;
         }
-        header {
-            background: #333;
-            color: white;
-            text-align: center;
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
             padding: 20px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            background: #444;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            padding: 10px 20px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        section {
-            padding: 20px;
-            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         img {
-            width: 50%;
-            max-width: 500px;
-            height: auto;
-            margin-top: 10px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #ddd;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
         }
         footer {
-            text-align: center;
+            margin-top: 20px;
             padding: 10px;
             background: #333;
             color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Chào mừng đến với Cẩm nang Nghề nghiệp</h1>
-    </header>
-    <nav>
+    <div class="container">
+        <h1>Giới thiệu bản thân</h1>
+        <img src="/images/my_image.jpg" alt="Ảnh đại diện">
+        <p><strong>Họ và tên:</strong> Trần Tấn Phát</p>
+        <p><strong>MSSV:</strong> 2180608720</p>
+        <p><strong>Lớp:</strong> 21DTHF2</p>
+        <p><strong>Chuyên ngành:</strong> Công nghệ phần mềm</p>
+        <h2>Dự án đã tham gia</h2>
         <ul>
-            <li><a href="#about">Giới thiệu</a></li>
-            <li><a href="#careers">Nghề nghiệp</a></li>
-            <li><a href="#contact">Liên hệ</a></li>
+            <li>Hệ thống chấm công bằng vân tay</li>
+            <li>Website bán quần áo</li>
+            <li>Ứng dụng theo dõi sức khỏe</li>
         </ul>
-    </nav>
-    <section id="about">
-        <h2>Giới thiệu</h2>
-        <p>Website này cung cấp thông tin về các ngành nghề phổ biến, giúp bạn định hướng và chọn lựa công việc phù hợp.</p>
-        <img src="images/career.jpg" alt="Hình ảnh nghề nghiệp">
-    </section>
-    <section id="careers">
-        <h2>Các ngành nghề phổ biến</h2>
-        <ul>
-            <li>Phát triển phần mềm</li>
-            <li>Thiết kế đồ họa</li>
-            <li>Kỹ sư điện tử</li>
-            <li>Marketing số</li>
-            <li>Bác sĩ, Y tá</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Liên hệ</h2>
-        <p>Email: contact@career.com</p>
-    </section>
+    </div>
     <footer>
-        <p>&copy; 2025 Giới Thiệu Nghề Nghiệp. All rights reserved.</p>
+        <p>&copy; 2025 Trần Tấn Phát. All rights reserved.</p>
     </footer>
 </body>
 </html>
