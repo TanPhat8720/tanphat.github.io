@@ -320,6 +320,46 @@
     .head-pill{display:none}
   }
 
+/* ===== FIX HEADER VA BANNER TREN DIEN THOAI ===== */
+@media (max-width: 1024px) {
+
+  /* Đưa header ra khỏi vị trí đè lên banner */
+  .site-head,
+  .site-head.scrolled {
+    position: relative !important;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 100%;
+    background: var(--green);
+  }
+
+  /* Không để banner bị che hoặc cắt nội dung */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 1671 / 941;
+    overflow: hidden;
+    margin-top: 0;
+  }
+
+  /* Hiển thị toàn bộ khung ảnh */
+  .hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain !important;
+    object-position: center center;
+  }
+
+  .hero-txt,
+  .hero-scroll {
+    display: none;
+  }
+}
 </style>
 </head>
 <body>
